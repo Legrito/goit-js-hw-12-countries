@@ -71,6 +71,7 @@ body {
 
   .country-wrapper img {
     width: 300px;
+    box-shadow: 4px -1px 8px 6px rgba(157, 157, 157, 0.3);
   }
 
   .country-properties {
