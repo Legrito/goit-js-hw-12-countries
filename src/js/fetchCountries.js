@@ -23,6 +23,9 @@ const onCountryMurkupRender = (data, template) => {
 
 const fetchCountries = (e) => {
     const country = `${e.target.value}`;
+    if (country === '') {
+        clearMarkup();
+    }
     fetch(baseUrl + country)   
     .then(response => response.json())
     .then(data => {
